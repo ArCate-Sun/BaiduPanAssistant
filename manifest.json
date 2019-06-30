@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	"name": "百度网盘文件保存助手",
+	"version": "1.0.0",
+	"description": "百度网盘文件保存助手",
+	"icons": {
+		"128": "img/logo.png"
+	},
+	"page_action": {
+		"default_icon": {
+			"128": "img/logo.png"
+		},
+		"default_title": "百度网盘文件保存助手"
+	},
+
+	"background": {
+		"scripts": [
+			"js/background.js"
+		]
+	},
+
+	// "content_scripts": 
+    // [
+    //     {
+    //         "matches": ["*://pan.baidu.com/s/*"],
+    //         "js": ["js/jquery.js", "js/c_baidupan_download_page.js"],
+    //         "run_at": "document_end"
+    //     }
+    // ],
+	
+	"permissions": [
+		"tabs",
+		"declarativeContent",
+		"http://pan.baidu.com/s/*",
+		"https://pan.baidu.com/s/*"
+	]
+}
